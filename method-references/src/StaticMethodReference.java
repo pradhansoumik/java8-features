@@ -8,7 +8,7 @@ public class StaticMethodReference {
     }
     public static void main(String[] args) {
         // Referring static method
-        Sayable sayable = StaticMethodReference::saySomething;
+        SayableNew sayable = StaticMethodReference::saySomething;
         // Calling interface method
         sayable.say();
     }

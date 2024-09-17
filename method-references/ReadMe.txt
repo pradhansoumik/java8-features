@@ -10,3 +10,4 @@ Java Method References
         Reference to a static method.
         Reference to an instance method.
         Reference to a constructor.
+        Reference to an Instance Method of an Arbitrary Object of a Particular Type
