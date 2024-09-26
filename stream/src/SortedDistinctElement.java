@@ -21,7 +21,7 @@ public class SortedDistinctElement {
         //O/p -> [1, 5, 7, 8, 9, 11, 12, 19, 100]
         List<Integer> integerList = list.stream().filter(x -> x.toString().startsWith("1")).distinct().sorted().toList();
 
-        System.out.println("Printing O/P: "+integerList);
+        System.out.println("Printing O/P: "+integerList);//actual output.
 
         Map<Integer, Long> collect = list.stream().collect(Collectors.groupingBy(Integer::intValue, Collectors.counting()));
         //removing duplicates & printing distinct element in ascending order => [7, 9, 11, 12, 19]
