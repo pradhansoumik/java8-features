@@ -8,10 +8,16 @@ public class MissingElementFromAnArray {
 
         int[] arr = {1,2,4,5,6,7,8,9,10};
         int[] arr1 = {1,2,3,4,6,7,8,9,10,11,13,14,15,20};
+        int[] arr2 = {1,2,3,4,5,6,7,8,9,11};
         //findMissingNumber(arr);
-        System.out.println("printing missing numbers: "+findMissingNumbers(arr1));
+        missingNum(arr2, arr2.length);
+        //System.out.println("printing missing numbers: "+findMissingNumbers(arr1));
     }
 
+    /**
+     * Approach-1
+     * @param arr
+     */
     private static void findMissingNumber(int[] arr) {
         System.out.print("printing sum of natural numbers: ");
         int n = arr.length + 1;
@@ -46,6 +52,23 @@ public class MissingElementFromAnArray {
             }
         }
         return list;
+    }
+
+    /**
+     * Approach-2
+     * @param arr
+     * @param n
+     * @return
+     */
+    private static int missingNum(int[] arr, int n){
+
+        for(int i = 0; i<arr.length; i++){
+            if(arr[i] != i+1){
+                System.out.println(i+1);
+                return i+1;
+            }
+        }
+        return 0;
     }
 
 }

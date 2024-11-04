@@ -21,6 +21,7 @@ public class CountOfCharacters {
 
         //2nd approach
         String collect1 = list.stream().collect(Collectors.joining());
+        System.out.println(collect1);
         Map<Character, Long> collect2 = collect1.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(ch -> ch, Collectors.counting()));
         System.out.println(collect2);
 
