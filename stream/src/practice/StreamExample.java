@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * examples of multiple intermediate operations
+ */
 public class StreamExample {
     public static void main(String[] args) {
         Integer[] arr = {4,2,8,1,2,2,3,4,5,6,1,8,9,2};
