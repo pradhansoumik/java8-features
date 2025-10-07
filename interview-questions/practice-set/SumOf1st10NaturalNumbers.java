@@ -8,7 +8,7 @@ public class SumOf1st10NaturalNumbers {
 
         //end element is exclusive
         int sum = IntStream.range(1,11).sum();
-        //end element is exclusive
+        //end element is inclusive
         int sum1 = IntStream.rangeClosed(1,10).sum();
         System.out.println(sum1);
     }
